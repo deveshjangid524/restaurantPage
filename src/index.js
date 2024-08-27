@@ -1,1 +1,5 @@
-console.log("hello world");
+import { loadContent } from "./contentLoader";
+
+document.addEventListener("DOMContentLoaded", () => {
+    loadContent();
+})
