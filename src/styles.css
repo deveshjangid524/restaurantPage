@@ -138,3 +138,22 @@ nav button:hover {
 .booking-button:hover {
     background-color: #e6e6e6;
 }
+
+
+nav button {
+    background-color: #555;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+nav button:hover {
+    background-color: #777;
+}
+
+nav button.active {
+    background-color: #007BFF; 
+    color: white;
+}

@@ -1,18 +1,19 @@
 import cola from "./cola.avif";
 import food from "./food.avif";
 
-export function loadContent () {
+export function loadContent() {
     const contentDiv = document.getElementById("content");
-    
-    
+
+    // Clear previous content
+    contentDiv.innerHTML = '';  // This clears out any existing content
+
     const introSection = document.createElement("section");
     introSection.className = "intro-section";
     introSection.innerHTML = `
         <h1>Welcome to Our Restaurant</h1>
         <p>Experience the finest dining with a menu crafted to delight your senses. Our chefs use only the freshest ingredients to create mouth-watering dishes that will leave you craving for more.</p>
     `;
-    
-   
+
     const featuredSection = document.createElement("section");
     featuredSection.className = "featured-section";
     featuredSection.innerHTML = `
@@ -24,12 +25,11 @@ export function loadContent () {
             </div>
             <div class="featured-item">
                 <img src="${food}" alt="Featured Dish 2">
-                <p>yummy Food Item</p>
+                <p>Yummy Food Item</p>
             </div>
         </div>
     `;
-    
-    
+
     const bookingSection = document.createElement("section");
     bookingSection.className = "booking-section";
     bookingSection.innerHTML = `
